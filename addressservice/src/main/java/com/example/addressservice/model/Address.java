@@ -17,6 +17,9 @@ public class Address {
     @Column(name = "state")
     private String state;
 
+    @Column(name = "employee_id")
+    private String employeeId;
+
     public int getId() {
         return id;
     }
@@ -39,5 +42,13 @@ public class Address {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 }
